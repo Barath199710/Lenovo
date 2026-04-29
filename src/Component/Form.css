@@ -1,0 +1,35 @@
+/* form.css */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* spacing between fields */
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #007bff; /* highlight on focus */
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

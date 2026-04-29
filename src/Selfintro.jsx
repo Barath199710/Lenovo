@@ -16,8 +16,7 @@ export default function Selfintro() {
       </p>
         <div className="spacer">
     <span>Html</span>
-    <span>Css</span> 
-    
+    <span>Css</span>     
     <span>JavaScript</span>
     <span>React</span>
   </div>
