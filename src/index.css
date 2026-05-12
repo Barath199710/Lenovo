@@ -1,1 +1,48 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+.form.light {
+  background: #f9f9f9;
+  color: #000;
+}
+
+.form.dark {
+    background: #333;
+  color: #fff;
+}
+
+.toggle-btn {
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
 

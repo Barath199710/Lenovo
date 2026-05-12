@@ -1,0 +1,54 @@
+.card {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.preview {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.like-section {
+  margin: 15px 0;
+}
+
+.like-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.like-btn.liked {
+  color: red;
+}
+
+.comment-section {
+  margin-top: 15px;
+}
+
+.comment-section input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.comment-section button {
+  padding: 8px 12px;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
