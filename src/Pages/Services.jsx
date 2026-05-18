@@ -1,4 +1,4 @@
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "../Components/ServiceCard";
 import React from "react";
 
 const services = [
