@@ -8,8 +8,13 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+    font-size: 46px;
+  text-align: center;
+  background: linear-gradient(90deg, #00bcd4, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .navbar ul {
@@ -22,6 +27,7 @@
 
 .navbar ul li a {
   color: #fff;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -29,6 +35,7 @@
 
 .navbar ul li a:hover {
   color: #00aced;
+  text-decoration: underline;
 }
 
 /* Responsive: stack menu on small screens */

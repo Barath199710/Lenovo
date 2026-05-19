@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchPosts } from "../api/fetchData";
 import React from "react";
+import "../styles//Gallery.css";
 
 function Gallery() {
   const [posts, setPosts] = useState([]);
@@ -12,7 +13,10 @@ function Gallery() {
 
   const addPost = () => {
     if (newPost.trim()) {
-      setPosts([...posts, { id: Date.now(), title: newPost, body: "Custom content" }]);
+      setPosts([
+        ...posts,
+        { id: Date.now(), title: newPost, body: "Custom content" }
+      ]);
       setNewPost("");
     }
   };
@@ -22,22 +26,26 @@ function Gallery() {
   };
 
   return (
-    <div className="page">
+    <div className="gallery-page">
       <h1>Gallery</h1>
-      <input 
-        value={newPost} 
-        onChange={(e) => setNewPost(e.target.value)} 
-        placeholder="Add new project"
-      />
-      <button onClick={addPost}>Add</button>
-      <ul>
+      <div className="add-section">
+        <input 
+          value={newPost} 
+          onChange={(e) => setNewPost(e.target.value)} 
+          placeholder="Add new project"
+        />
+        <button onClick={addPost}>Add</button>
+      </div>
+
+      <div className="post-list">
         {posts.map(post => (
-          <li key={post.id}>
+          <div key={post.id} className="post-card">
             <h4>{post.title}</h4>
+            <p>{post.body}</p>
             <button onClick={() => deletePost(post.id)}>Delete</button>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-
+import "../styles/Contact.css";
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 

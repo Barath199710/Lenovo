@@ -1,20 +1,37 @@
-import ServiceCard from "../Components/ServiceCard";
 import React from "react";
-
-const services = [
-  { id: 1, title: "Web Development", desc: "Building responsive websites." },
-  { id: 2, title: "UI/UX Design", desc: "Creative and user-friendly layouts." },
-  { id: 3, title: "API Integration", desc: "Seamless backend connectivity." }
-];
+import "../styles/Services.css";
 
 function Services() {
   return (
-    <div className="page">
+    <section className="services-section" id="services">
       <h1>Our Services</h1>
-      <div className="service-list">
-        {services.map(s => <ServiceCard key={s.id} title={s.title} desc={s.desc} />)}
+      <div className="services-boxes">
+        <div className="service-card">
+          <h2>Web Development</h2>
+          <p>
+            We build scalable, responsive websites with clean code and modern
+            frameworks to ensure performance and reliability.
+          </p>
+        </div>
+
+        <div className="service-card">
+          <h2>UI/UX Design</h2>
+          <p>
+            Creative, user‑centric designs that blend aesthetics with
+            functionality, delivering seamless digital experiences.
+          </p>
+        </div>
+
+        <div className="service-card">
+          <h2>API Integration</h2>
+          <p>
+            Smooth backend connectivity with REST APIs and third‑party services,
+            enabling powerful features and real‑time data flow.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
+
 export default Services;
